@@ -1,10 +1,13 @@
 {
+  "homepage": "https://sreanghourhy.github.io/My_OwnProject/Music_Chill/21_March_2025",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d build",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -32,6 +35,7 @@
     "react-router-dom": "^7.3.0",
     "react-toastify": "^11.0.5",
     "react-youtube": "^10.1.0",
+    "yarn": "^1.22.22",
     "youtube-iframe": "^1.0.3"
   },
   "devDependencies": {
